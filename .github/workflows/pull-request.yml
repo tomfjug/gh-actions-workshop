@@ -1,5 +1,5 @@
 # Workflow names are optional, but should be provided.
-# They are displayed on GitHub when the action is run.
+# They are displayed on GitHub when the action is run. Test
 name: Hello world
 
 # The `on` property configures the events that will trigger the workflow.
