@@ -28,14 +28,18 @@ jobs:
         run: echo "Hello everyone in the 🌏!"
 
   build:
-    - name: Checkout repository
     runs-on: ubuntu-latest
+    name: Checkout repository
     # To reference external workflows, we use the `uses` keyword.
     # The thing after the `@` is the version of the workflow, and is a Git tag.
-    uses: actions/checkout@v3
     
     # Each job can have multiple steps. These will be run in sequence.
     steps:
+      - name: Checkout repository
+      # To reference external workflows, we use the `uses` keyword.
+      # The thing after the `@` is the version of the workflow, and is a Git tag.
+        uses: actions/checkout@v3
+    
       - name: Install dependencies
         run: npm ci
 
