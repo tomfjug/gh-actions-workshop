@@ -29,7 +29,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    name: Checkout repository
+    name: build
     # To reference external workflows, we use the `uses` keyword.
     # The thing after the `@` is the version of the workflow, and is a Git tag.
     
